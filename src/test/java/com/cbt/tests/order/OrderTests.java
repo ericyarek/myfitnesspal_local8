@@ -1,4 +1,4 @@
-package com.cbt.tests.order;
+	package com.cbt.tests.order;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -38,7 +38,7 @@ public class OrderTests extends TestBase {
 		assertTrue(allOrdersPage.orderTab.isDisplayed(), "orderTab is not displayed");
 	}
 
-	@Test(description = "Verify default Products and prices")
+	@Test(description = "Verify default Products and prices", groups= {"smoke","regression"})
 	public void availableProductsTest() {
 		assertEquals(driver.getTitle(), "Web Orders Login", "LoginPage is not displayed. Application is down.");
 		LoginPage loginPage = new LoginPage();
