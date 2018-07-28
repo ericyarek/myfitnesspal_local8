@@ -24,5 +24,11 @@ public class HomePage {
 	@FindBy(xpath="(//input[@type='submit'])[2]")
 	
 	public WebElement loginBtn;
-	
+	 public void logIn() {
+		 Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+		 login.click();
+		 username.sendKeys(ConfigurationReader.getProperty("username"));
+		 password.sendKeys(ConfigurationReader.getProperty("password"));
+		 loginBtn.click();
+	 }
 }

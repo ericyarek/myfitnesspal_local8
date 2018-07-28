@@ -1,6 +1,9 @@
 package com.cbt.pages;
 
-import org.openqa.selenium.WebDriver;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -33,4 +36,13 @@ public class ExercisesPageDamira {
 	public WebElement caloriesBurned;
 	@FindBy(xpath="//input[@id='update_exercise']")
 	public WebElement thirdAddExercise;
+	
+	@FindBy(xpath="//table[@id='cardio-diary']//td[.='Cardiovascular']")
+	public WebElement cardioBtn;
+
+	@FindBy(css=".first.alt>.exercise-description")
+	public WebElement exerciseDescription;
+	
+
+	
 }
