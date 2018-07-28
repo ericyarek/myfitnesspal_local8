@@ -66,7 +66,7 @@ public abstract class TestBase {
         	String screenshotLocation = BrowserUtils.getScreenshot(result.getName());
         	
         	// capture the name of test method
-            extentLogger.fail(result.getName());
+//            extentLogger.fail(result.getName());
             
             //add the screenshot to the report
             extentLogger.addScreenCaptureFromPath(screenshotLocation);
