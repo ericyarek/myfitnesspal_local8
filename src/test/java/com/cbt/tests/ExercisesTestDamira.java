@@ -22,8 +22,9 @@ public class ExercisesTestDamira extends TestBase {
 	LogOutDamira logOut=new LogOutDamira();
 
         //SPA-419 MATHCING EXERCISE TEST
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	public void exercisesPageTest() throws InterruptedException {
+		home.logIn();
         //TestStep 1
 		exercise.exerciseBtn.click();
 		Assert.assertTrue(Driver.getDriver().getTitle().contains("Exercise Diary"));
